@@ -2,13 +2,17 @@
   "name": "cleaner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/main.js",
   "scripts": {
+    "build": "npx tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "cleaner": "./build/main.js"
+  },
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
